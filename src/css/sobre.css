@@ -179,7 +179,7 @@
         font-size: 3em;
     }
     .titulo h1{
-        margin: 30px -70px;
+        margin: -10px -110px;
     }
     .conteudo-1{
         padding: 0 0 0 15px;
@@ -195,7 +195,4 @@
         font-size: 20px;
         margin: -50px -20px 0 -20px;
     }
-} 
-
-
-
+}
