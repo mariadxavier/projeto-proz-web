@@ -136,3 +136,17 @@ select    {
   .card:is(:hover, :focus-visible) {
     --hover: 1;
   }
+
+  /* banner publicidade: */
+.banner-publicidade {
+  display: block;
+  margin-bottom: 20px;
+}
+
+  .banner-publicidade img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.7);
+  }
