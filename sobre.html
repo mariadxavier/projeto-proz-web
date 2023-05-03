@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Reset: -->
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <!-- estilo: -->
+    <link rel="stylesheet" href="./src/css/sobre.css">
+    <link rel="stylesheet" href="src/css/nav-footer.css">
+    <!-- Fontes: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=IBM+Plex+Sans&family=Lato:wght@900&display=swap"
+        rel="stylesheet">
+        <!--link icons footer:  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link icon da página -->
+    <link rel="icon" href="./src/img/icon-portal-BH.png" type="img">
+    <title>Sobre Nós</title>
+</head>
+<body>
+    <!-- menu: -->
+    <header>
+        <div class="header">
+            <a href="./index.html"><img src="./src/img/logo-portal-BH.png" alt="Logo Meu País BH"></a>
+    
+            <script src="./src/js/menu.js"></script>
+    
+            <div id="dropdown">
+                <img src="./src/img/bars-solid.svg" onclick="abrirMenu()" class="slide-fwd-bl dropdown-button">
+                <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Buscar..." id="pesquisa-nav" onkeyup="filtroPesquisa()">
+                    <nav class="header-nav">
+                        <a href="./cad.html">Cadastro</a>
+                        <a href="./ult-not.html">Últimas notícias</a>
+                        <a href="./art-cult.html">Arte e Cultura</a>
+                        <a href="./event.html">Eventos</a>
+                        <a href="./pol.html">Política</a>
+                        <a href="./gast.html">Gastronomia</a>
+                        <a href="./sobre.html">Quem Somos</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+</header>
+    <!-----------intro------------>
+    <div class="titulo">
+        <div class="intro-titulo">
+            <h1>Quem Somos?</h1>
+            <p></p>
+        </div>
+        <img src="./src/img/sobre-icon-1.svg">
+    </div>
+    <!-------------sobre---------------->
+            <div class="conteudo-1">
+                <div class="cont-testo-1">
+                    <p id="cont-1">Meu País BH foi desenvolvido por alunos do curso técnico em Desenvolvimento de Sistemas na Instituição Proz Educação, sendo eles: Maria Eduarda Xavier, Raissa Santos, Agnaldo Reis, Victor Castilho e Alan Victor. </p>
+                </div>
+                    <img src="./src/img/sobre-icon-2.svg">     
+            </div>
+            
+            <div class="conteudo-2">
+                <div class="cont-testo-2">
+                    <p>Criado com foco em notícias e novidades da capital mineira, lar dos desenvolvedores, o portal busca trazer uma energia mais jovial e divertida.</p>
+                </div>
+                <img src="./src/img/sobre-icon-3.svg">
+            </div>
+            
+     <!-- final: -->
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img src="./src/img/logo-portal-BH.png" alt="Meu País BH" width="180px">
+
+                <div id="footer_social_media">
+                    <a href="https://www.facebook.com/" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="telefone">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Atendimento</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Horário</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Contato</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">E-mail</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Conheça</h3>
+                </li>
+                <li>
+                    <a href="./sobre.html" class="footer-link">Quem somos</a>
+                </li>
+                <li>
+                    <a href="https://github.com/mariadxavier" class="footer-link">Nossas redes</a>
+                </li>
+                <li>
+                    <a href="./cad.html" class="footer-link">Cadastre-se</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Notificações</h3>
+
+                <p>
+                    Digite seu e-mail para receber
+                    notificações!
+                </p>
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope" ;></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023
+        </div>
+    </footer>
+    
+
+</body>
+</html>

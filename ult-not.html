@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Reset: -->
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <!-- estilo: -->
+    <link rel="stylesheet" href="./src/css/ult-not.css">
+    <link rel="stylesheet" href="./src/css/nav-footer.css">
+    <script src="./src/js/menu.js"></script>
+    <!-- Fontes: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=IBM+Plex+Sans&family=Lato:wght@900&display=swap"
+        rel="stylesheet">
+    <!--link icons footer:  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Últimas Notícias</title>
+</head>
+
+<body>
+    <!-- menu: -->
+    <header>
+        <div class="header">
+            <a href="./index.html"><img src="./src/img/logo-portal-BH.png" alt="Logo Meu País BH"></a>
+
+            <script src="./src/js/menu.js"></script>
+
+            <div id="dropdown">
+                <img src="./src/img/bars-solid.svg" onclick="abrirMenu()" class="slide-fwd-bl dropdown-button">
+                <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Buscar..." id="pesquisa-nav" onkeyup="filtroPesquisa()">
+                    <nav class="header-nav">
+                        <a href="./cad.html">Cadastro</a>
+                        <a href="./ult-not.html">Últimas notícias</a>
+                        <a href="./art-cult.html">Arte e Cultura</a>
+                        <a href="./event.html">Eventos</a>
+                        <a href="./pol.html">Política</a>
+                        <a href="./gast.html">Gastronomia</a>
+                        <a href="./sobre.html">Quem Somos</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- -------intro------------ -->
+    <div class="cont-intro">
+        <div class="intro-text">
+            <h1>Últimas Notícias</h1>
+            <p>Fique por dentro das atualizações diárias das suas notícias no seu portal favorito
+                <br>Meu País BH!
+            </p>
+        </div>
+        <img src="./src/img/notícias.gif" alt="icon Últimas Notícias">
+    </div>
+
+    <!--cards imagem e descrição-->
+    <section>
+        <figure class="card">
+            <div class="card_hero">
+                <img class="card_img" src="./src/img/whatsapp-image-2023-05-01-at-07.29.23.webp" alt="not-fogo" />
+            </div>
+            <div class="card_content">
+                <div class="card_info">
+                    <a href="#">
+                        <h5 class="card_price">
+                            Loja de resina em BH foi invadida por homem horas antes de pegar fogo</h5>
+                    </a>
+                    <p class="card_address">Os proprietários suspeitam de que o incêndio possa ter origem criminosa.
+                        No entanto, as causas serão investigadas e, até o momento, não é possível fazer uma ligação
+                        entre a invasão e o início das chamas.</p>
+                    <p class="card_details"><small class="text-body-secondary">Há 7 horas</small></p>
+                </div>
+            </div>
+        </figure>
+        </a>
+    </section>
+
+    <section class="sec2">
+        <figure class="card2">
+            <div class="card_content2">
+                <div class="card_info2">
+                    <a href="#">
+                        <h5 class="card_price2">
+                            Filarmônica de Minas Gerais comemora 15 anos de história com show na Grande BH</h5>
+                    </a>
+                    <p class="card_address2">A apresentação gratuita, em Betim, será a primeira da série Filarmônica na
+                        Praça, com a regência do maestro José Soares. 📯🎷🎺🎻</p>
+                    <p class="card_details2"><small class="text-body-secondary">Há 7 horas</small></p>
+                </div>
+            </div>
+            <div class="card_hero2">
+                <img class="card_img2"
+                    src="./src/img/maestro-jose-soares-regente-associado-da-filarmonica-mg-foto-bruna-brandao-32.webp"
+                    alt="not-music" />
+            </div>
+        </figure>
+    </section>
+
+    <section class="sec3">
+        <figure class="card3">
+            <div class="card_hero3">
+                <img class="card_img3" src="./src/img/photo-5080485298424621915-y.webp" alt="not-BH" />
+            </div>
+            <div class="card_content3">
+                <div class="card_info3">
+                    <a href="#">
+                        <h5 class="card_price3">Batida entre dois ônibus do Move em avenida de BH </h5>
+                    </a>
+                    <p class="card_address3">Os coletivos são das linhas 505H (Terminal Morro Alto/Hospitais) e 5106
+                        (Bandeirantes/BH Shopping).
+                        Um homem ficou preso às ferragens e foi retirado pelas equipes.</p>
+                    <p class="card_details3"><small class="text-body-secondary">Há 8 horas </small></p>
+                </div>
+            </div>
+        </figure>
+        </a>
+    </section>
+
+    <section class="sec4">
+        <figure class="card4">
+            <div class="card_content4">
+                <div class="card_info4">
+                    <a href="#">
+                        <h5 class="card_price4">
+                            Prefeitura de BH implanta novas placas de Rotativo com QR Code para orientar motoristas</h5>
+                    </a>
+                    <p class="card_address4">Código tem orientações sobre o funcionamento do Estacionamento Rotativo, os
+                        locais dos postos de venda de créditos e os aplicativos credenciados para celular.</p>
+                    <p class="card_details4"><small class="text-body-secondary">Há 10 horas</small></p>
+                </div>
+            </div>
+            <div class="card_hero4">
+                <img class="card_img4" src="./src/img/rotativo.webp" alt="not-music" />
+            </div>
+        </figure>
+    </section>
+
+    <section class="sec5">
+        <figure class="card5">
+            <div class="card_hero5">
+                <img class="card_img5" src="./src/img/Belo_Horizonte_2.jpg" alt="not-BH" />
+            </div>
+            <div class="card_content5">
+                <div class="card_info5">
+                    <a href="#">
+                        <h5 class="card_price5">Previsão de BH 🌤️⛅ </h5>
+                    </a>
+                    <p class="card_address5">Veja as previsôes na grande BH Maio começa com a carinha do outono: ar
+                        seco, dias ensolarados e temperaturas amenas! </p>
+                    <p class="card_details5"><small class="text-body-secondary">Há 11 horas </small></p>
+                </div>
+            </div>
+        </figure>
+        </a>
+    </section>
+
+    <section class="sec6">
+        <figure class="card6">
+            <div class="card_content6">
+                <div class="card_info6">
+                    <a href="#">
+                        <h5 class="card_price6">
+                            HABANERA - Coaduna Cia de Dança</h5>
+                    </a>
+                    <p class="card_address6">Evento em BH que acontecerá no Centro Cultural UFMG a peça propõe
+                        recriar um baile de salão da segunda metade do século XIX em Cuba, e transportá-lo para os
+                        tempos atuais. </p>
+                    <p class="card_details6"><small class="text-body-secondary">Há 7 horas</small></p>
+                </div>
+            </div>
+            <div class="card_hero6">
+                <img class="card_img6" src="./src/img/habanera.jpg" alt="not-music" />
+            </div>
+        </figure>
+    </section>
+
+    <!-- final: -->
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img src="./src/img/logo-portal-BH.png" alt="Meu País BH" width="180px">
+
+                <div id="footer_social_media">
+                    <a href="https://www.facebook.com/" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="telefone">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Atendimento</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Horário</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Contato</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">E-mail</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Conheça</h3>
+                </li>
+                <li>
+                    <a href="./sobre.html" class="footer-link">Quem somos</a>
+                </li>
+                <li>
+                    <a href="https://github.com/mariadxavier" class="footer-link">Nossas redes</a>
+                </li>
+                <li>
+                    <a href="./cad.html" class="footer-link">Cadastre-se</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Notificações</h3>
+
+                <p>
+                    Digite seu e-mail para receber
+                    notificações!
+                </p>
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope" ;></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

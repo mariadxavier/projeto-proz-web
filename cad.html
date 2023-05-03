@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Reset: -->
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <!-- estilo: -->
+    <link rel="stylesheet" href="./src/css/cad.css">
+    <link rel="stylesheet" href="src/css/nav-footer.css">
+    <!-- Fontes: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=IBM+Plex+Sans&family=Lato:wght@900&display=swap"
+        rel="stylesheet">
+    <!--link icons footer:  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link icon da página -->
+    <link rel="icon" href="./src/img/icon-portal-BH.png" type="img">
+    <title>Cadastro | Meu País BH</title>
+
+</head>
+
+<body>
+    <!-- menu: -->
+    <header>
+        <div class="header">
+            <a href="./index.html"><img src="./src/img/logo-portal-BH.png" alt="Logo Meu País BH"></a>
+
+            <script src="./src/js/menu.js"></script>
+
+            <div id="dropdown">
+                <img src="./src/img/bars-solid.svg" onclick="abrirMenu()" class="slide-fwd-bl dropdown-button">
+                <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Buscar..." id="pesquisa-nav" onkeyup="filtroPesquisa()">
+                    <nav class="header-nav">
+                        <a href="./cad.html">Cadastro</a>
+                        <a href="./ult-not.html">Últimas notícias</a>
+                        <a href="./art-cult.html">Arte e Cultura</a>
+                        <a href="./event.html">Eventos</a>
+                        <a href="./pol.html">Política</a>
+                        <a href="./gast.html">Gastronomia</a>
+                        <a href="./sobre.html">Quem Somos</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- -------intro------------ -->
+    <div class="cont-intro">
+        <div class="intro-text">
+            <h1>Cadastro</h1>
+            <p>Registre-se para receber notificações de notícias, novidades, eventos, exposições, shows, música e
+                outros!</p>
+        </div>
+        <img src="./src/img/gif-intro-cad.gif" alt="gif mulher cadastrando">
+    </div>
+
+    <!-- ------cadastro-------- -->
+    <div class="cont-cad">
+        <form class="cad" id="cad-user">
+            <div class="entrada-dados" id="pnome-user">
+                <label for="pnome-user">Seu nome:</label><br>
+                <input type="text" name="pnome-user" placeholder="Ex: Fulano"><br>
+            </div>
+
+            <div class="entrada-dados" id="tel-user">
+                <label for="tel-user">Telefone:</label><br>
+                <input type="text" name="tel-user" placeholder="(xx)xxxxx-xxxx"> <br>
+            </div>
+
+
+
+            <div class="entrada-dados" id="user">
+                <label for="user">Usuário:</label><br>
+                <input type="text" name="user" placeholder="Ex: ful_ano"> <br>
+            </div>
+
+            <div class="entrada-dados" id="senha-user">
+                <label for="senha-user">Senha:</label><br>
+                <input type="password" id="password" name="senha-user" placeholder="********"><br>
+                <img src="./src/img/eye-solid.svg" alt="olho" id="olho">
+            </div>
+
+
+            <div class="entrada-dados" id="email-user">
+                <label for="email-user">E-mail:</label><br>
+                <input type="email" name="email-user" placeholder="exemplo@email.com"><br>
+            </div>
+
+
+            <div class="entrada-dados" id="conf-senha-user">
+                <label for="conf-senha-user">Confirmação de senha:</label><br>
+                <input type="password" id="confirm-password" name="conf-senha-user" placeholder="*******"> <br>
+                <img src="./src/img/eye-solid.svg" alt="olho" id="olho2">
+            </div>
+
+            <div class="cad-buttons" id="botoes-cad">
+                <button class="cancel-button">Cancelar</button>
+                <button class="confrim-button">Confirmar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./src/js/cad.js"></script>
+    <!-- final: -->
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img src="./src/img/logo-portal-BH.png" alt="Meu País BH" width="180px">
+
+                <div id="footer_social_media">
+                    <a href="https://www.facebook.com/" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="telefone">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Atendimento</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Horário</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Contato</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">E-mail</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Conheça</h3>
+                </li>
+                <li>
+                    <a href="./sobre.html" class="footer-link">Quem somos</a>
+                </li>
+                <li>
+                    <a href="https://github.com/mariadxavier" class="footer-link">Nossas redes</a>
+                </li>
+                <li>
+                    <a href="./cad.html" class="footer-link">Cadastre-se</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Notificações</h3>
+
+                <p>
+                    Digite seu e-mail para receber
+                    notificações!
+                </p>
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope" ;></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023
+        </div>
+    </footer>
+</body>
+
+</html>

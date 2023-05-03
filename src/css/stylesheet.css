@@ -1,0 +1,222 @@
+/* ----------------intro:------------------------------- */
+.cont-intro {
+    display: block;
+    position: relative;
+    margin-top: 85px;
+}
+
+.intro-text {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 1;
+    color: var(--color-secundary);
+    width: 100%;
+    font-size: 20px;
+    padding: 60px;
+    align-items: center;
+    text-align: center;
+}
+
+.intro-text p {
+    width: 50%;
+}
+
+/* ----------------carousel:------------------------------- */
+#carousel-container-intro-index {
+    margin-top: 15px;
+    width: 100%;
+    height: 320px;
+    position: relative;
+}
+
+.carousel-inner {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.35);
+    opacity: 0;
+}
+
+.carousel-item img.on {
+    opacity: 1;
+}
+
+/* ---------------cards:------------------------------------ */
+
+.cont-menu {
+    margin: 60px 100px 100px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    height: 230px;
+    width: 280px;
+    border-radius: 8px;
+    border: 2px solid #303030;
+    box-shadow: 4px 4px 0 #303030;
+    padding: 2rem 2rem;
+}
+
+.card h2 {
+    padding: 10px;
+    font-size: 1.7rem;
+    color: var(--color-secundary);
+}
+
+.card p {
+    font-size: 1rem;
+    color: var(--color-secundary);
+}
+
+.cor1 {
+    background-color: var(--color-primary);
+}
+
+.cor3 {
+    background-color: var(--color-tertiary);
+}
+
+.cor4 {
+    background-color: var(--color-quartenary);
+}
+
+/* ------------------------------------------- */
+.divisao {
+    width: 100%;
+    height: 20px;
+    background-color: var(--color-tertiary);
+}
+
+/* RESPONSIVO: */
+
+/*Tela 4k*/
+@media screen and (min-width:1800px) {
+    header nav,
+    #pesquisa-nav {
+        font-size: 23px;
+    }
+
+    .dropdown-content {
+        width: 400px;
+    }
+
+    .intro-text {
+        font-size: 38px;
+    }
+
+    #carousel-container-intro-index {
+        height: 490px;
+    }
+
+    .divisao {
+        height: 35px;
+    }
+
+    .card:nth-child(4) {
+        background-color: var(--color-tertiary);
+    }
+
+    .medias {
+        justify-content: center;
+    }
+
+    .cards {
+        gap: 60px;
+    }
+
+    .card {
+        height: 270px;
+        width: 300px;
+    }
+}
+
+/* configurado para laptop L inicialmente */
+    /*Laptop P */
+@media screen and (max-width: 1140px) {
+    .card:nth-child(3) {
+        background-color: var(--color-tertiary);
+    }
+
+}
+
+/* Tablet */
+@media screen and (max-width: 960px) { 
+    .cont-menu {
+        margin: 60px 50px 100px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*Celular*/
+ @media screen and (max-width: 760px) {
+    .dropdown-content {
+        margin-right: -60px;
+        overflow: auto;
+    }
+
+    #dropdown {
+        margin-right: -30px;
+    }
+
+    .dropdown-button {
+        margin-right:-30px;
+        height: 60px;
+    }
+    
+    .cont-intro {
+        margin-top: 80px;
+    }
+    
+    .intro-text {
+        font-size: 18px;
+        padding: 40px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .intro-text p {
+        margin-top: 15px;
+        width: 90%;
+    }
+
+    #carousel-container-intro-index {
+        margin-top: 15px;
+        height: 300px;
+    }
+
+    .cont-menu {
+        margin: 30px 100px 100px 100px;
+    }
+
+    .card:nth-child(2) {
+        background-color: var(--color-quartenary);
+    }
+
+    .card:nth-child(4) {
+        background-color: var(--color-primary);
+    }
+
+    .card:nth-child(5) {
+        background-color: var(--color-quartenary);
+    }
+}

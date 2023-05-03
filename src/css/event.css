@@ -1,0 +1,138 @@
+.cont-intro {
+    font-size: 30px;
+    margin: 80px 80px 60px 80px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.intro-text {
+    padding: 80px 20px 0 20px;
+    color: var(--color-tertiary);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cont-intro img {
+    margin: 40px 0 0 -50px;
+    height: 270px;
+}
+
+.intro-text h1{
+    margin-bottom: 18px;
+}
+
+.divisao {
+    width: 100%;
+    height: 20px;
+    background-color: var(--color-tertiary);
+}
+
+/* grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, and the grid-auto-flow properties */
+/* --------select:-------- */
+.espaco-select {
+    margin: 20px 0 -35px 0;
+    display: flex;
+    justify-content: center;
+}
+
+select    {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5%;
+    color: var(--color-primary);
+    border: 3px solid var(--color-tertiary);
+}
+
+/* ------cards---------- */
+.cont-filtro-eventos {
+    display: flex;
+    padding: 70px 100px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.eventos {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    gap: 30px;
+  }
+  
+  .card {
+    --blur: 16px;
+    --size: clamp(320px, 50vmin, 600px);
+    width: var(--size);
+    aspect-ratio: 4 / 3;
+    position: relative;
+    border-radius: 2%;
+    overflow: hidden;
+    color: var(--color-secundary);
+    transform: translateZ(0);
+  }
+  
+  .card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+    transform: scale(calc(1 + (var(--hover, 0) * 0.25)));
+    transition: transform 0.2s;
+  }
+  
+  .card__footer {
+    padding: 1rem 1.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--color-primary);
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 0.5ch;
+    background: var(--color-primary)(0 0% 100% / 0.5);
+    backdrop-filter: blur(var(--blur));
+    height: 30%;
+    align-content: center;
+  }
+  
+  .card__action {
+    position: absolute;
+    aspect-ratio: 1;
+    width: calc(var(--size) * 0.15);
+    bottom: 30%;
+    right: 1.5rem;
+    transform: translateY(57%)
+      translateY(
+        calc(
+          (var(--size) * 0.3)
+        )
+      )
+      translateY(calc(var(--hover, 0) * (var(--size) * -0.4)));
+    display: grid;
+    place-items: center;
+    border-radius: 10%;
+    transition: transform 0.2s;
+  }
+  
+  .card__action svg {
+    aspect-ratio: 1;
+    width: 50%;
+    filter: invert(1);
+  }
+  
+  .card__footer span:nth-of-type(1) {
+    font-size: calc(var(--size) * 0.065);
+  }
+  
+  .card__footer span:nth-of-type(2) {
+    font-size: calc(var(--size) * 0.035);
+  }
+  
+  .card:is(:hover, :focus-visible) {
+    --hover: 1;
+  }

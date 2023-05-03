@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politica</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/pol.css">
+    <link rel="stylesheet" href="./src/css/nav-footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=IBM+Plex+Sans&family=Lato:wght@900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Meu País BH</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="./index.html"><img src="./src/img/logo-portal-BH.png" alt="Logo Meu País BH"></a>
+
+            <script src="./src/js/menu.js"></script>
+
+            <div id="dropdown">
+                <img src="./src/img/bars-solid.svg" onclick="abrirMenu()" class="slide-fwd-bl dropdown-button">
+                <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Buscar..." id="pesquisa-nav" onkeyup="filtroPesquisa()">
+                    <nav class="header-nav">
+                        <a href="./cad.html">Cadastro</a>
+                        <a href="./ult-not.html">Últimas notícias</a>
+                        <a href="./art-cult.html">Arte e Cultura</a>
+                        <a href="./event.html">Eventos</a>
+                        <a href="./pol.html">Política</a>
+                        <a href="./gast.html">Gastronomia</a>
+                        <a href="./sobre.html">Quem Somos</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="politica">
+        <h1>POLÍTICA</h1>
+    </div>
+    <div class="imgpoli"> 
+        <img src="https://gife.org.br/wp/media/2020/12/ico-democracia.png">
+             </div>
+
+    </div>
+    <div class="contnoticia">
+        <div class="noticia c1">
+            <h1>Carlos Viana quer ser candidato à Prefeitura de BH</h1>
+            <img src="https://www.senado.gov.br/senadores/img/fotos-oficiais/senador5990.jpg" alt="senadorcarlosviana">
+            <P>Eleito por 3,5 milhões de mineiros em 2018, o senador Carlos Viana (PL) foi terceiro colocado na
+                eleição para o governo do estado no ano passado, com 783 mil votos. Agora, em meio a continuidade do
+                trabalho em projetos nacionais, estaduais e municipais, o parlamentar inicia a segunda metade do seu
+                mandato com nova meta: concorrer à Prefeitura de Belo Horizonte em 2024.
+            </p>
+        </div>
+
+        <div class="noticia c2">
+            <h1>Zema cita insegurança nas escolas para anunciar 599 nomeações na Polícia Civil</h1>
+            <img src="https://assets.infra.grancursosonline.com.br/projeto/pc-mg-policia-civil-do-estado-de-minas-gerais.jpg"
+                alt="policia civil">
+            <p>Na publicação, o chefe do Executivo citou o ambiente de insegurança vivido atualmente em escolas de
+                Minas Gerais.
+                “Em tempos tão difíceis para nós e nossos alunos, continuamos somando esforços para manter o Estado
+                mais seguro.
+                Hoje, serão nomeados mais 599 policiais civis.</p>
+        </div>
+
+
+        <div class="noticia c3">
+            <h1> Zema critica Cemig e fala em privatizar estatais</h1>
+            <img src="https://www.secretariageral.mg.gov.br/Images/ckeditor/qiv2npig.fd4romeu-zema-2-2.png" alt="zema">
+            <p> O governador de Minas Gerais, Romeu Zema (Novo), criticou nesta quarta-feira, 26, as empresas
+                estatais e afirmou
+                que irá enviar à Assembleia Legislativa do Estado os projetos de privatização. Segundo ele, tais
+                propostas já
+                estão sendo debatidas com a diretoria da ALMG e serão enviadas aos demais deputados nas próximas
+                semanas </p>
+        </div>
+    </div>
+   
+    <!-- final: -->
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img src="./src/img/logo-portal-BH.png" alt="Meu País BH" width="180px">
+
+                <div id="footer_social_media">
+                    <a href="https://www.facebook.com/" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="telefone">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Atendimento</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Horário</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Contato</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">E-mail</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Conheça</h3>
+                </li>
+                <li>
+                    <a href="./sobre.html" class="footer-link">Quem somos</a>
+                </li>
+                <li>
+                    <a href="https://github.com/mariadxavier" class="footer-link">Nossas redes</a>
+                </li>
+                <li>
+                    <a href="./cad.html" class="footer-link">Cadastre-se</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Notificações</h3>
+
+                <p>
+                    Digite seu e-mail para receber
+                    notificações!
+                </p>
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope" ;></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
